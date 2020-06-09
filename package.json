@@ -15,7 +15,13 @@
   "bugs": {
     "url": "https://github.com/fabioctetsuo/final-space-course/issues"
   },
+  "scripts": {
+    "lint": "eslint ."
+  },
   "dependencies": {
     "unique-random-array": "^2.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.2.0"
   }
 }
