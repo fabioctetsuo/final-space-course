@@ -17,12 +17,14 @@
   },
   "scripts": {
     "lint": "eslint .",
+    "test": "jest",
     "prettier": "prettier --ignore-path .gitignore \"**/*.+(js|json)\" \"!package.json\"",
     "format": "yarn run prettier --write",
     "check-format": "yarn run prettier --list-different",
     "validate": "yarn run check-format && yarn run lint"
   },
   "dependencies": {
+    "jest": "^26.0.1",
     "unique-random-array": "^2.0.0"
   },
   "devDependencies": {
