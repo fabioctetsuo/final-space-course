@@ -16,12 +16,18 @@
     "url": "https://github.com/fabioctetsuo/final-space-course/issues"
   },
   "scripts": {
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "prettier": "prettier --ignore-path .gitignore \"**/*.+(js|json)\" \"!package.json\"",
+    "format": "yarn run prettier --write",
+    "check-format": "yarn run prettier --list-different",
+    "validate": "yarn run check-format && yarn run lint"
   },
   "dependencies": {
     "unique-random-array": "^2.0.0"
   },
   "devDependencies": {
-    "eslint": "^7.2.0"
+    "eslint": "^7.2.0",
+    "eslint-config-prettier": "^6.11.0",
+    "prettier": "^2.0.5"
   }
 }

@@ -7,4 +7,4 @@ const random = uniqueRandomArray(finalSpaceCharacters);
 module.exports = {
   all,
   random,
-}
+};
