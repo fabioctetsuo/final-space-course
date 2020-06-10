@@ -1,4 +1,4 @@
-const { all, random } = require('.');
+import { all, random } from '.';
 
 describe('all', () => {
   it('must return an array of strings', () => {

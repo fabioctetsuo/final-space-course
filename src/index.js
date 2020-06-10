@@ -1,10 +1,7 @@
-const uniqueRandomArray = require('unique-random-array');
-const finalSpaceCharacters = require('./final-space-characters.json');
+import uniqueRandomArray from 'unique-random-array';
+import finalSpaceCharacters from './final-space-characters.json';
 
 const all = () => finalSpaceCharacters;
 const random = uniqueRandomArray(finalSpaceCharacters);
 
-module.exports = {
-  all,
-  random,
-};
+export { all, random };
