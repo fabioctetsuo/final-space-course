@@ -2,7 +2,7 @@
   "name": "final-space-course",
   "version": "0.0.0",
   "description": "An open source library to return the final space characters",
-  "main": "src/index.js",
+  "main": "dist/main.js",
   "repository": "git@github.com:fabioctetsuo/final-space-course.git",
   "author": "fabioctetsuo@gmail.com",
   "license": "MIT",
@@ -15,6 +15,9 @@
   "bugs": {
     "url": "https://github.com/fabioctetsuo/final-space-course/issues"
   },
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "lint": "eslint .",
     "prebuild": "rimraf dist",
