@@ -18,6 +18,12 @@
   "files": [
     "dist"
   ],
+  "publishConfig": {
+    "access": "public",
+    "branches": [
+      "master"
+    ]
+  },
   "scripts": {
     "lint": "eslint .",
     "prebuild": "rimraf dist",
@@ -27,7 +33,8 @@
     "prettier": "prettier --ignore-path .gitignore \"**/*.+(js|json)\" \"!package.json\"",
     "format": "yarn run prettier --write",
     "check-format": "yarn run prettier --list-different",
-    "validate": "npm-run-all --parallel check-format lint build"
+    "validate": "npm-run-all --parallel check-format test build",
+    "semantic-release": "semantic-release"
   },
   "dependencies": {
     "jest": "^26.0.1",
